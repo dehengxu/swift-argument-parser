@@ -24,9 +24,9 @@ let package = Package(
         .target(
             name: "ArgumentParser",
             dependencies: []),
-        .target(
-            name: "TestHelpers",
-            dependencies: ["ArgumentParser"]),
+//        .target(
+//            name: "TestHelpers",
+//            dependencies: ["ArgumentParser"]),
         
         .target(
             name: "roll",
@@ -41,17 +41,17 @@ let package = Package(
             dependencies: ["ArgumentParser"],
             path: "Examples/repeat"),
         
-        .testTarget(
-            name: "EndToEndTests",
-            dependencies: ["ArgumentParser", "TestHelpers"]),
-        .testTarget(
-            name: "UnitTests",
-            dependencies: ["ArgumentParser", "TestHelpers"]),
-        .testTarget(
-            name: "PackageManagerTests",
-            dependencies: ["ArgumentParser", "TestHelpers"]),
-        .testTarget(
-            name: "ExampleTests",
-            dependencies: ["TestHelpers"]),
+//        .testTarget(
+//            name: "EndToEndTests",
+//            dependencies: ["ArgumentParser", "TestHelpers"]),
+//        .testTarget(
+//            name: "UnitTests",
+//            dependencies: ["ArgumentParser", "TestHelpers"]),
+//        .testTarget(
+//            name: "PackageManagerTests",
+//            dependencies: ["ArgumentParser", "TestHelpers"]),
+//        .testTarget(
+//            name: "ExampleTests",
+//            dependencies: ["TestHelpers"]),
     ]
 )
